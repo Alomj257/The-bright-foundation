@@ -28,6 +28,33 @@
 
     <!--  email js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <style>
+        .social_media_links a {
+        align-items: center;
+        justify-content: center;
+        width: 150px; /* Adjust width as needed */
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        font-size: 16px; /* Adjust size as needed */
+        color: white !important; /* Text color white */
+        text-decoration: none;
+        background-color: #3b5998; /* Default to Facebook blue */
+    }
+
+    .social_media_links .facebook {
+        background-color: #3b5998; /* Facebook blue */
+    }
+
+    .social_media_links .instagram {
+        background-color: #C13584; /* Instagram pink/purple */
+    }
+
+    .social_media_links i {
+        margin-right: 8px; /* Space between icon and text */
+        font-size: 20px; /* Make icon larger */
+    }
+    </style>
 
 </head>
 
@@ -46,27 +73,27 @@
                         <div class="col-xl-6 col-md-12 col-lg-8">
                             <div class="short_contact_list">
                                 <ul>
-                                    <li><a href="tel:+91 9760168911"> <i class="fa fa-phone"></i> 9760168911
-                                    </a></li>
-                                    <li><a  href="mailto:bffbsr@gmail.com"   > <i class="fa fa-envelope"></i>bffbsr@gmail.com 
-                                    </a></li>
-                                </ul>
+                                    <li>
+                                        <a href="tel:+91 9760168911">
+                                            <i class="fa fa-phone" style="color: #4CAF50;"></i> 9760168911
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:bffbsr@gmail.com">
+                                            <i class="fa fa-envelope" style="color: #FF5722;"></i> bffbsr@gmail.com
+                                        </a>
+                                    </li>
+                                </ul>                                
                             </div>
                         </div>
                         <div class="col-xl-6 col-md-6 col-lg-4">
                             <div class="social_media_links d-none d-lg-block">
-                                <a href="https://www.facebook.com/profile.php?id=61564475481347&mibextid=ZbWKwL">
-                                    <i class="fa fa-facebook"></i>
+                                <a href="https://www.facebook.com/profile.php?id=61564475481347&mibextid=ZbWKwL" class="facebook">
+                                    <i class="fa fa-facebook"></i> Facebook
                                 </a>
-                                <a href="https://www.instagram.com/brightfuturefoundation111?igsh=eTdyZGY1cHF2djJp">
-                                    <i class="fa fa-instagram"></i>
+                                <a href="https://www.instagram.com/brightfuturefoundation111?igsh=eTdyZGY1cHF2djJp" class="instagram">
+                                    <i class="fa fa-instagram"></i> Instagram
                                 </a>
-                                <!-- <a href="#">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a> -->
                             </div>
                         </div>
                     </div>
@@ -215,30 +242,17 @@
                                     <img src="/img/logo2.jpg" alt="">
                                 </a>
                             </div>
-                           <p class="address_text h1 my-3" style="font-size: 25px;">Bright Future Foundation
+                            <p class="address_text h1 my-3" style="font-size: 25px;">Bright Future Foundation
                             </p>
-                            <div class="socail_links">
-                                <ul>
-                                   <li>
-                                        <a href="https://www.facebook.com/profile.php?id=61564475481347&mibextid=ZbWKwL">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                    </li>  <li>
-                                        <a href="#">
-                                            <i class="ti-twitter-alt"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-dribbble"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/brightfuturefoundation111?igsh=eTdyZGY1cHF2djJp">
-                                            <i class="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
+                            <div class="social_media_links">
+                                <a href="https://www.facebook.com/profile.php?id=61564475481347&mibextid=ZbWKwL"
+                                    class="facebook">
+                                    <i class="fa fa-facebook"></i> Facebook
+                                </a>
+                                <a href="https://www.instagram.com/brightfuturefoundation111?igsh=eTdyZGY1cHF2djJp"
+                                    class="instagram">
+                                    <i class="fa fa-instagram"></i> Instagram
+                                </a>
                             </div>
 
                         </div>
@@ -249,7 +263,7 @@
                                 Services
                             </h3>
                             <ul class="links">
-                               
+
                                 <li data-toggle="modal" data-target="#donateModal"><a href="#">Donate</a></li>
                                 <li><a href="#">Sponsor</a></li>
                                 <li><a href="#">Fundraise</a></li>
@@ -264,13 +278,13 @@
                             </h3>
                             <div class="contacts">
                                 <p>+91 9760168911<br>
-                                   bffbsr@gmail.com <br>
+                                    bffbsr@gmail.com <br>
                                     Daulatpur kalan Bulandshahar uttar pradesh 202398
                                 </p>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -280,9 +294,11 @@
                     <div class="bordered_1px "></div>
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
                         </p>
                     </div>
                 </div>
